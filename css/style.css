@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.nav {
+  padding: 0px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: transparent;
+}
+
+.nav .logo {
+  width: 120px;
+}
+
+.nav .signInBtn {
+  cursor: pointer;
+  padding: 6px 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #e50914;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+.banner {
+  height: 350px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .headers h1:not(.first) {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background: #1a2a6c;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#fdbb2d), color-stop(#b21f1f), to(#1a2a6c));
+  background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner .first {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.banner::before {
+  content: "";
+  height: 400px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000), color-stop(5%, #000), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, left bottom, color-stop(0, #000), color-stop(2%, #000), color-stop(30%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top, #000 0, #000 5%, rgba(0, 0, 0, 0) 100%), linear-gradient(to bottom, #000 0, #000 2%, rgba(0, 0, 0, 0) 30%);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -9;
+}
+
+.banner::after {
+  content: "";
+  height: 400px;
+  background-color: #1a2a6c;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -10;
+  background-image: url(../images/bg-image-large.jpg);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.get-started {
+  display: block;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.get-started .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.get-started input {
+  padding: 1rem 1rem;
+  width: 40%;
+  font-size: 1rem;
+  font-weight: normal;
+  outline: none;
+  border: none;
+  margin: 0;
+  color: #f8f8f8;
+}
+
+.get-started button {
+  padding: 1.1rem 1rem;
+  margin: 0;
+  font-size: 1.3rem;
+  color: #f8f8f8;
+  background-color: #e50914;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.get-started p {
+  font-size: 1.1rem;
+  color: #eeeeee;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+.features {
+  color: #fff;
+  width: 50%;
+  margin: 100px auto 50px auto;
+  padding: 50px 0;
+}
+
+.features h2 {
+  font-size: 4rem;
+}
+
+.features ul {
+  margin-top: 30px;
+}
+
+.features ul li {
+  margin-bottom: 80px;
+  list-style-type: none;
+}
+
+.features ul .icon {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 35px;
+  color: #fff;
+  -webkit-transform: translate(-50px, 5px);
+          transform: translate(-50px, 5px);
+}
+
+.features ul .feature {
+  font-size: 2rem;
+  display: inline-block;
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
+}
+
+.features ul .description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.faq h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.faq .card {
+  width: 50%;
+  letter-spacing: 1.5px;
+  margin: 10px auto;
+}
+
+.faq .question {
+  font-size: 1.3rem;
+  padding: 10px 20px;
+  background-color: #303030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faq .question .expand {
+  width: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.faq .answer {
+  padding: 20px;
+  background-color: #303030;
+  margin-top: 2px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.footer {
+  padding: 80px 100px;
+  color: #7a7a7a;
+  margin-bottom: 20px;
+}
+
+.footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0;
+  max-height: 180px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer li {
+  list-style: none;
+  padding: 5px 0;
+  font-size: 0.9rem;
+}
+
+.breaker {
+  margin-top: 100px;
+  position: relative;
+  top: 0;
+  height: 5px;
+  width: 100%;
+  background-color: #7a7a7a;
+}
+/*# sourceMappingURL=style.css.map */
